@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to choose operations</p>
+
+<button onclick="myFunction()">POP</button>
+<button onclick="myFunction1()">PUSH</button>
+<button onclick="myFunction2()">SHIFT</button>
+<button onclick="myFunction3()">UNSHIFT</button>
+<button onclick="myFunction4()">SLICE</button>
+<p id="a"></p>
+
+<script>
+var colours = ["Pink", "Orange", "Blue", "Red"];
+document.getElementById("a").innerHTML = colours;
+
+function myFunction1() {
+    colours.push("Green");
+  document.getElementById("a").innerHTML = colours;
+}
+function myFunction2() {
+    colours.shift();
+  document.getElementById("a").innerHTML = colours;
+}
+function myFunction3() {
+    colours.unshift("Violet");
+  document.getElementById("a").innerHTML = colours;
+}
+function myFunction() {
+    colours.pop();
+  document.getElementById("a").innerHTML = colours;
+}
+function myFunction4() {
+    sl=colours.slice(1,3);
+  document.getElementById("a").innerHTML = sl;
+}
+</script>
+
+</body>
+</html>
